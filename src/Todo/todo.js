@@ -16,7 +16,7 @@ function Todo() {
 
     function removeItems(i){  // this function is for removing the added list datas. it is taking i(index) as a parameter.
         const updatedList = addList.filter((elem, id)=>{   // using filter method to filter out the list data. 
-            return i!==id  // retrn if index not equalto id.
+            return i!==id  // retrn if index not equal to id.
         }) 
         setaddList(updatedList)   // updating the addlist variable with the updated list..
     }
@@ -35,7 +35,7 @@ function Todo() {
                       
                     <>
                     
-                     <div><h4>{data}</h4>   <button className='remove-btn' onClick={()=>removeItems(i)}>Remove</button></div>{/* data represents each elements ib= the array and prints it in an h4 tag */}
+                     <div><h4>{data}</h4> <button className='remove-btn' onClick={()=>removeItems(i)}>Remove</button></div>{/* data represents each elements ib= the array and prints it in an h4 tag */}
                      {/*  delete button takes onclick event function as
                                                                                arrow function with (i) as parameter */}
                     </>

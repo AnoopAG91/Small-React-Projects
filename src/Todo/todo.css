@@ -55,3 +55,12 @@ button.remove-btn {
     background-color: #d44013;
     color: white;
 }
+
+@media (max-width:768px) {
+    .todo-wrapper {
+        background-color: #06273b;
+        margin: 0 auto;
+        min-height: 25vh;
+        width: 90%;
+    }
+}
